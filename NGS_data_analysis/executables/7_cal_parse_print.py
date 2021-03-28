@@ -66,12 +66,13 @@ print("Read flipped and non-flipped")
 RBS_S_nf = {} # <----------------- not optimal as dictionary
 RBS_S_ff = {} # <----------------- not optimal as dictionary
 for idx in range(1, SAMPLES_NUMBER + 1):  # files named 1 up to SAMPLES_NUMBER = 9
-    dataframe_nf = pd.read_csv(os.path.join(PATH, 'RBS_S{0}_nf_all.tmp'.format(idx)), names='RBS')
+    print('arianna', os.path.join(PATH, 'RBS_S{0}_nf_all.tmp'.format(idx)))
+    dataframe_nf = pd.read_csv(os.path.join(PATH, 'RBS_S{0}_nf_all.tmp'.format(idx)))
     dataframe_nf = pd.value_counts(dataframe_nf.iloc[:, 0]).to_frame().reset_index()
     dataframe_nf.columns = ["RBS", "S{}".format(idx)]
     RBS_S_nf[idx] = dataframe_nf
     
-    dataframe_ff = pd.read_csv(os.path.join(PATH, 'RBS_S{0}_ff_all.tmp'.format(idx)), names='RBS')
+    dataframe_ff = pd.read_csv(os.path.join(PATH, 'RBS_S{0}_ff_all.tmp'.format(idx)))
     dataframe_ff = pd.value_counts(dataframe_ff.iloc[:, 0]).to_frame().reset_index()
     dataframe_ff.columns = ["RBS", "S{}".format(idx)]
     RBS_S_ff[idx] = dataframe_ff
