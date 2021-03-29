@@ -1,0 +1,117 @@
+########################
+Logfile of uASPIre_example
+########################
+Date and time: 2021-03-29 12:56:57
+Root path: /workspace/uASPIre/uASPIre_example
+Raw data file R1: /workspace/uASPIre/uASPIre_example/raw_data/uASPIre_simulated_R1.fastq.gz
+Raw data file R2: /workspace/uASPIre/uASPIre_example/raw_data/uASPIre_simulated_R2.fastq.gz
+Output path: /workspace/uASPIre/uASPIre_example/output
+Result path: /workspace/uASPIre/uASPIre_example/results
+Name of logfile: /workspace/uASPIre/uASPIre_example/log/log-2021-03-29_12-56.log
+Path to agrep executable: /workspace/agrep/agrep
+Path to tre-agrep executable: tre-agrep
+Number of parallel tasks: 12
+Number of time samples: 12
+########################
+
+2021-03-29 12:56:57: starting script /workspace/uASPIre/NGS_data_analysis/executables/0_gunzip.sh ...
+2021-03-29 12:56:58: Total number of reads in /workspace/uASPIre/uASPIre_example/output/data.fastq: 54000
+2021-03-29 12:56:58: script /workspace/uASPIre/NGS_data_analysis/executables/0_gunzip.sh successfully executed
+Script 0 runtime: 00:00:01
+
+2021-03-29 12:56:58: starting script /workspace/uASPIre/NGS_data_analysis/executables/1_QC_constant_par.sh ...
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_05.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_11.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_06.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_01.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_08.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_07.tmp: 4500
+2021-03-29 12:57:00: Total number of reads with constant region in data_R2-7-17_C-pos_10.tmp: 4500
+2021-03-29 12:57:01: Total number of reads with constant region in data_R2-7-17_C-pos_12.tmp: 4500
+2021-03-29 12:57:01: Total number of reads with constant region in data_R2-7-17_C-pos_03.tmp: 4500
+2021-03-29 12:57:01: Total number of reads with constant region in data_R2-7-17_C-pos_09.tmp: 4500
+2021-03-29 12:57:01: Total number of reads with constant region in data_R2-7-17_C-pos_02.tmp: 4500
+2021-03-29 12:57:01: Total number of reads with constant region in data_R2-7-17_C-pos_04.tmp: 4500
+2021-03-29 12:57:01: script /workspace/uASPIre/NGS_data_analysis/executables/1_QC_constant_par.sh successfully executed
+Script 1 runtime: 00:00:02
+
+2021-03-29 12:57:01: starting script /workspace/uASPIre/NGS_data_analysis/executables/2_retrieve_constant_par.py ...
+2021-03-29 12:57:02: Total number of reads in data_QC_C_12.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_05.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_06.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_02.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_03.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_04.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_10.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_01.tmp: 4500
+2021-03-29 12:57:02: Total number of reads in data_QC_C_07.tmp: 4500
+2021-03-29 12:57:03: Total number of reads in data_QC_C_09.tmp: 4500
+2021-03-29 12:57:03: Total number of reads in data_QC_C_08.tmp: 4500
+2021-03-29 12:57:03: Total number of reads in data_QC_C_11.tmp: 4500
+2021-03-29 12:57:03: script /workspace/uASPIre/NGS_data_analysis/executables/2_retrieve_constant_par.py successfully executed
+Script 2 runtime: 00:00:02
+
+2021-03-29 12:57:03: starting script /workspace/uASPIre/NGS_data_analysis/executables/3_BC_discriminator_par.sh ...
+2021-03-29 12:57:07: script /workspace/uASPIre/NGS_data_analysis/executables/3_BC_discriminator_par.sh successfully executed
+Script 3 runtime: 00:00:04
+
+2021-03-29 12:57:07: starting script /workspace/uASPIre/NGS_data_analysis/executables/4_samples_RBS_par.py ...
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 04
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 01
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 09
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 11
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 07
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 10
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 08
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 05
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 02
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 12
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 06
+2021-03-29 12:57:10: Number of RBSs that are both flipped and non-flipped: 0; task 03
+2021-03-29 12:57:14: script /workspace/uASPIre/NGS_data_analysis/executables/4_samples_RBS_par.py successfully executed
+Script 4 runtime: 00:00:07
+
+2021-03-29 12:57:14: starting script /workspace/uASPIre/NGS_data_analysis/executables/5_RBS_sequence_par.sh ...
+2021-03-29 12:57:16: script /workspace/uASPIre/NGS_data_analysis/executables/5_RBS_sequence_par.sh successfully executed
+Script 5 runtime: 00:00:02
+
+2021-03-29 12:57:16: starting script /workspace/uASPIre/NGS_data_analysis/executables/6_cat.sh ...
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	1:	2250
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	2:	2250
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	3:	2240
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	4:	2237
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	5:	2250
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	6:	2237
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	7:	2245
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	8:	2245
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	9:	2235
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	10:	2243
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	11:	2250
+2021-03-29 12:57:20: Total number of non-flipped reads in sample	12:	2245
+2021-03-29 12:57:20: Total number of flipped reads in sample	1:	2250
+2021-03-29 12:57:20: Total number of flipped reads in sample	2:	2250
+2021-03-29 12:57:20: Total number of flipped reads in sample	3:	2218
+2021-03-29 12:57:21: Total number of flipped reads in sample	4:	2241
+2021-03-29 12:57:21: Total number of flipped reads in sample	5:	2250
+2021-03-29 12:57:21: Total number of flipped reads in sample	6:	2223
+2021-03-29 12:57:21: Total number of flipped reads in sample	7:	2250
+2021-03-29 12:57:21: Total number of flipped reads in sample	8:	2250
+2021-03-29 12:57:21: Total number of flipped reads in sample	9:	2239
+2021-03-29 12:57:21: Total number of flipped reads in sample	10:	2232
+2021-03-29 12:57:21: Total number of flipped reads in sample	11:	2248
+2021-03-29 12:57:21: Total number of flipped reads in sample	12:	2241
+2021-03-29 12:57:21: script /workspace/uASPIre/NGS_data_analysis/executables/6_cat.sh successfully executed
+Script 6 runtime: 00:00:05
+
+2021-03-29 12:57:21: starting script /workspace/uASPIre/NGS_data_analysis/executables/7_cal_parse_print.py ...
+INFO:root:2021-03-29 12:57:21: Number of lines in non-flipped dataset 433, number of lines in flipped dataset 425
+INFO:root:2021-03-29 12:57:21: Number of lines in non-flipped dataset 513, number of lines in flipped dataset 513 after overall cutoff
+INFO:root:2021-03-29 12:57:21: Total number of NaN values as fraction flipped: 3911
+INFO:root:2021-03-29 12:57:21: Total number of RBSs with NaN values as fraction flipped: 504
+2021-03-29 12:57:21: script /workspace/uASPIre/NGS_data_analysis/executables/7_cal_parse_print.py successfully executed
+Script 7 runtime: 00:00:00
+
+########################
+Script successfully executed!
+Total runtime: 00:00:24
+########################
