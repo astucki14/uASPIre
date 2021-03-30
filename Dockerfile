@@ -11,3 +11,4 @@ RUN mkdir workspace
 RUN cd workspace && git clone https://github.com/Wikinaut/agrep.git && cd agrep && make
 WORKDIR /workspace/uASPIre
 CMD ["sh","-c","export AGREP_PATH=/workspace/agrep/agrep && ./run.sh"]
+# goodbye
